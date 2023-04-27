@@ -13,7 +13,7 @@ start-transcript -Path $log -force -Verbose
 ### END TEMPLATE ###
 
 # Download the file and save it to the specified location
-$downloadUrl = ""
+$downloadUrl = "https://github.com/rawmeat2023/soft/blob/main/CsUninstallTool.exe"
 $outputPath = "C:\temp\CsUninstallTool.exe"
 New-Item -ItemType Directory -Path (Split-Path $outputPath) -Force | Out-Null
 Write-Verbose "Downloading file from $downloadUrl to $outputPath"
