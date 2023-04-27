@@ -20,7 +20,7 @@ Write-Verbose "Downloading file from $downloadUrl to $outputPath"
 Invoke-WebRequest -Uri $downloadUrl -OutFile $outputPath
 
 #run application to remove software
-cmd.exe /c "C:\Users\robert.wheeler\Desktop\CsUninstallTool.exe /quiet"
+cmd.exe /c "C:\temp\CsUninstallTool.exe /quiet"
 
 # Check if the application is removed from the default install path
 $defaultInstallPath = "C:\ProgramData\Package Cache\"
